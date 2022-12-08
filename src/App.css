@@ -1,0 +1,88 @@
+
+.App {
+  text-align: center;
+  background: url(Components/content/images/bg_main.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 880px;
+  background-attachment: fixed;
+}
+
+.mr-auto{ 
+  margin-right: auto;
+}
+
+.logo__brand {
+  display: flex;
+}
+
+.logo__brand__words {
+  padding-left: 1em;
+  font-size: 1.3em;
+  color: #0dcaf0;
+}
+
+.d-inline-block {
+  border-radius: 50%;
+}
+
+.home__container {
+  font-size: 87px;
+  color:wheat;
+  mix-blend-mode: overlay;
+}
+
+.mr-auto>a {
+  text-decoration: none;
+  padding: 1em 1em ;
+  color:#94e8f8;
+}
+
+.mr-auto>a:hover {
+  color: #0dcaf0;
+}
+
+
+/* Асортимент */
+
+.categ {
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: 1fr 1fr 1fr ;
+  opacity: 50%;
+  text-align: center;
+  justify-content: space-between;
+  width: auto;
+  max-width: 575px;
+  grid-auto-rows: minmax(100px, 191px);
+  position: relative;
+  margin: 0 auto;  
+}
+
+.categ__item {
+  width: 156px;
+  height: 156px;
+  background-color: black;
+  margin: 1em;
+}
+
+@media (max-width: 900px) {
+  .categ {
+    grid-template-columns: 1fr 1fr ;
+    max-width: 375px;
+  }
+  .home__container {
+    font-size: 37px;
+  }
+}
+
+
+
+@media (min-width: 910px) {
+  .categ {
+    grid-template-columns: 1fr 1fr 1fr ;
+    max-width: 575px;
+  
+  
+  }
+}
